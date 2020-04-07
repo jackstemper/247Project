@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public abstract class Shows {
-	protected static String[][] seat = new String[8][8];
+	protected static String[][] seat = new String[6][10];
 	Scanner keyboard = new Scanner(System.in);
 	protected String Title;
 	protected Double Price;

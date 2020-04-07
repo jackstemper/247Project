@@ -48,6 +48,7 @@ public abstract class Shows extends MovieApp {
 	}
 	public Ticket buyTicket() {
 		if(Capacity>CapacityCounter) {
+			chooseSeat();
 			Capacity = Capacity+CAPACITYPLUSONE;
 		} else {
 			System.out.println("The showing is full");
@@ -60,8 +61,8 @@ public abstract class Shows extends MovieApp {
 	public void chooseSeat() {
 		boolean correctSeat = false;
 		while (correctSeat = false) {
-			for (int i = 0; i < 8; i++) {
-				for (int j = 0; j < 8; j++) {
+			for (int i = 0; i < 6; i++) {
+				for (int j = 0; j < 10; j++) {
 					seat[i][j] = "#";
 				}
 			}
@@ -75,10 +76,8 @@ public abstract class Shows extends MovieApp {
 			System.out.println("Choose your seat by entering the number of the desired row followed by desired column: ");
 			int row = keyboard.nextInt();
 			int column = keyboard.nextInt();
-
-			System.out.println("/n/n");
-
 			seat[row][column] = "O";
+			System.out.println("/n/n");
 
 			for (String[] a : seat) {
 				for (String i : a) {

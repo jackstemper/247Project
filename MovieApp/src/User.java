@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class User extends Account{
 	protected User user;
 	protected String Username;
-	protected String password;
+	protected String Password;
 	protected Ticket[] Tickets;
 	public Ticket[] getTickets() {
 		return Tickets;
@@ -19,8 +19,8 @@ public class User extends Account{
 	}
 
 	public void createAccount(){
-		user.Username = this.username;
-		user.Password = this.password;
+		user.Username = this.Username;
+		user.Password = this.Password;
 	}
 	
 }

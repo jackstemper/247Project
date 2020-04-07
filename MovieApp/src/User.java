@@ -17,5 +17,10 @@ public class User extends Account{
 		user.Username = "User";
 		user.Password = "Default";
 	}
+
+	public void createAccount(){
+		user.Username = this.username;
+		user.Password = this.password;
+	}
 	
 }

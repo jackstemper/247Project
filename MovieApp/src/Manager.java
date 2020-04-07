@@ -1,5 +1,5 @@
 
-public class Manager extends Account {
+/*public class Manager extends Account {
 	protected Manager manager;
 	protected String Username;
 	protected String Password;
@@ -10,9 +10,8 @@ public class Manager extends Account {
 	}
 
 	public Manager() {
-		manager = new Manager;
 		manager.Username = "Manager";
 		manager.Password = "Password";
 		IsManager = true;
 	}
-}
+}*/

@@ -8,7 +8,7 @@ public class MovieDriver {
 	// Make Account makes it so that you can get a ticket[] to save the tickets you get in a session
 	// View Tickets shows your tickets
 	private String[] HomeOptions = {"View Theaters", "Checkout Theater","Make account", "View Tickets", "Exit"};
-	// View Movies should show the Name, Time, and the small discription
+	// View Movies should show the Name, Time, and the small description
 	// Buy Ticket should increase the capacity counter in the Movie/play, and return a ticket to the account Ticket[]
 	// GbttHS is obv, just break out to Home Screen
 	private String[] VenueOptions = {"View Movies", "Buy a Ticket", "Go back to the Home Screen"};

@@ -13,7 +13,6 @@ public class User extends Account {
 	}
 
 	public User() {
-		user = new User;
 		user.Username = "User";
 		user.Password = "Default";
 	}

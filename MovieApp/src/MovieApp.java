@@ -22,6 +22,6 @@ public class MovieApp {
 		// Needs to be done
 	}
 	public void displayTix() {
-		// Needs to be done
+		Auditorium.chooseSeat();
 	}
 }

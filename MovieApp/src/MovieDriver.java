@@ -24,6 +24,21 @@ public class MovieDriver {
 		while(true) {
 			displayHome();
 			int userCommand = getAction(HomeOptions.length);
+			if(userCommand == HomeOptions.length -1) break;
+			switch(userCommand) {
+				case(0):
+					movieApp.viewTheaters();
+					break;
+				case(1):
+					movieApp.goToTheater();
+					break;
+				case(2):
+					movieApp.makeAccount();
+					break;
+				case(3):
+					movieApp.displayTix();
+					break;
+			}
 		}
 	}
 	private void displayHome() {

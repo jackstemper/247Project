@@ -3,8 +3,10 @@ public abstract class Shows {
 	protected String Title;
 	protected Double Price;
 	protected Double Time;
+	protected String Venue;
 	protected int Capacity;
 	protected int CapacityCounter;
+	private int CAPACITYPLUSONE = 1;
 	public String getTitle() {
 		return Title;
 	}
@@ -23,6 +25,12 @@ public abstract class Shows {
 	public void setTime(Double time) {
 		Time = time;
 	}
+	public String getVenue() {
+		return Venue;
+	}
+	public void setVenue(String venue) {
+		Venue = venue;
+	}
 	public int getCapacity() {
 		return Capacity;
 	}
@@ -35,12 +43,13 @@ public abstract class Shows {
 	public void setCapacityCounter(int capacityCounter) {
 		CapacityCounter = capacityCounter;
 	}
-
 	public Ticket buyTicket() {
-		Ticket retTicket = new Ticket(this.Title);
-		retTicket.setTime(Time);
-		//Not a hundred percent sure on how this should be done. Basically I want it to get the venue its already in but the show doesn't have that info I dont think.
-		//retTicket.setVenue(this.venue);
+		if(Capacity>CapacityCounter) {
+			Capacity = Capacity+CAPACITYPLUSONE;
+		} else {
+			System.out.println("The showing is full");
+		}
+		Ticket retTicket = new Ticket(this.Title, this.Time, this.Venue);
 		return retTicket;
 	}
 }

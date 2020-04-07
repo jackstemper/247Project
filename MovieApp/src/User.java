@@ -11,6 +11,7 @@ public class User extends Account {
 	public void setTickets(Ticket[] tickets) {
 		Tickets = tickets;
 	}
+	Scanner keyboard = new Scanner(System.in);
 
 	public User() {
 		this.Username = "User";
@@ -18,6 +19,12 @@ public class User extends Account {
 	}
 
 	public void createAccount() {
+		System.out.println("/nEnter your desired username: ");
+		Username = keyboard.next();
+		System.out.println("/nEnter a password for " + Username + ": ");
+		Password = keyboard.next();
+
+		user = new User();
 		user.Username = Username;
 		user.Password = Password;
 	}

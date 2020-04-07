@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Auditorium extends Venue{
+public class Auditorium extends Venue {
 	protected PArts[] PArts;
 	public PArts[] getPArts() {
 		return PArts;

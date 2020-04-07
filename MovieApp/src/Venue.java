@@ -14,6 +14,6 @@ public abstract class Venue extends MovieApp{
 	public void setName(String name) {
 		Name = name;
 	}
-	public abstract void chooseSeat();
+
 	
 }

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class User extends Account{
+public class User extends Account {
 	protected User user;
 	protected String Username;
 	protected String Password;
@@ -12,13 +12,13 @@ public class User extends Account{
 		Tickets = tickets;
 	}
 
-	public User(){
+	public User() {
 		user = new User;
 		user.Username = "User";
 		user.Password = "Default";
 	}
 
-	public void createAccount(){
+	public void createAccount() {
 		user.Username = this.Username;
 		user.Password = this.Password;
 	}

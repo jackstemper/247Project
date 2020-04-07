@@ -18,7 +18,7 @@ public class User extends Account {
 		this.Password = "Default";
 	}
 
-	public void createAccount() {
+	public User createAccount(User user) {
 		System.out.println("/nEnter your desired username: ");
 		Username = keyboard.next();
 		System.out.println("/nEnter a password for " + Username + ": ");
@@ -27,6 +27,9 @@ public class User extends Account {
 		user = new User();
 		user.Username = Username;
 		user.Password = Password;
+
+		return user;
+
 	}
 	
 }

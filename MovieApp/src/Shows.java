@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public abstract class Shows {
+public abstract class Shows extends MovieApp {
 	protected static String[][] seat = new String[6][10];
 	Scanner keyboard = new Scanner(System.in);
 	protected String Title;

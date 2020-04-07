@@ -13,13 +13,13 @@ public class User extends Account {
 	}
 
 	public User() {
-		user.Username = "User";
-		user.Password = "Default";
+		this.Username = "User";
+		this.Password = "Default";
 	}
 
 	public void createAccount() {
-		user.Username = this.Username;
-		user.Password = this.Password;
+		user.Username = Username;
+		user.Password = Password;
 	}
 	
 }

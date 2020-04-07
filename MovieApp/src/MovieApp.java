@@ -12,4 +12,16 @@ public class MovieApp {
 		Movie[] CarmikeList = {Matrix, Community};
 		Theater Carmike = new Theater("Carmike", "457984 Greendale Rd.", CarmikeList);
 	}
+	public void viewTheaters() {
+		// Needs to be done
+	}
+	public void goToTheater() {
+		// Needs to be done
+	}
+	public void makeAccount() {
+		// Needs to be done
+	}
+	public void displayTix() {
+		// Needs to be done
+	}
 }

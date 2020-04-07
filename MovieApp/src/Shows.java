@@ -88,9 +88,9 @@ public abstract class Shows extends MovieApp {
 
 			System.out.println("/nIs this the seat indicated by an 'O' the seat that you wanted?");
 			System.out.println("/nEnter 1 for yes or 2 for no: ");
-			String answer = keyboard.next();
+			int answer = keyboard.nextInt();
 
-			if(answer == "yes"){
+			if(answer == 1){
 				System.out.println("Your seat is in section " + row + " seat " + column + "/n");
 				correctSeat = true;
 			}

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ConcertHall extends Venue{
+public class ConcertHall extends Venue {
 	protected Concert[] Concerts;
 	public Concert[] getConcerts() {
 		return Concerts;

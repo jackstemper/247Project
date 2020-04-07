@@ -1,5 +1,5 @@
 
-public class PArts extends Shows{
+public class PArts extends Shows {
 	protected String Group;
 	public String getGroup() {
 		return Group;

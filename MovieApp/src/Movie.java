@@ -1,5 +1,5 @@
 
-public class Movie extends Shows{
+public class Movie extends Shows {
 	protected String LeadActor;
 	public Movie(String title, Double price, Double time, String venue, int capacity, int capacityCounter) {
 		Title = title;

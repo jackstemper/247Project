@@ -1,5 +1,5 @@
 
-public class Concert extends Shows{
+public class Concert extends Shows {
 	protected String Band;
 	public String getBand() {
 		return Band;

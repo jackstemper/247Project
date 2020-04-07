@@ -1,5 +1,5 @@
 
-public class Ticket {
+public class Ticket extends MovieApp {
 	protected String Title;
 	protected Double Time;
 	protected String Venue;

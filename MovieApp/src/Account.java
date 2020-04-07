@@ -1,5 +1,5 @@
 
-public abstract class Account {
+public abstract class Account extends MovieApp{
 	protected String Username;
 	protected String Password;
 	protected boolean IsManager;
@@ -18,4 +18,5 @@ public abstract class Account {
 	public boolean isManager() {
 		return this.IsManager;
 	}
+	public User createAccount;
 }

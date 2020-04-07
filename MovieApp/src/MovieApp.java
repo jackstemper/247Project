@@ -1,5 +1,8 @@
+import java.util.Arrays;
 
 public class MovieApp {
+	protected String Title, Venue;
+	protected double Time;
 	protected Theater[] Theaters;
 	protected Auditorium[] Auditoriums;
 	public void load() {
@@ -13,15 +16,17 @@ public class MovieApp {
 		Theater Carmike = new Theater("Carmike", "457984 Greendale Rd.", CarmikeList);
 	}
 	public void viewTheaters() {
-		// Needs to be done
+		System.out.println(Arrays.toString(Theaters));
 	}
 	public void goToTheater() {
 		// Needs to be done
 	}
 	public void makeAccount() {
-		// Needs to be done
+		User user = new User();
+		user.createAccount(user);
 	}
 	public void displayTix() {
-		// Needs to be done
+		Ticket ticket = new Ticket(Title, Time, Venue);
+		ticket.printTicket();
 	}
 }

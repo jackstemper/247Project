@@ -1,5 +1,5 @@
 
-public class Movie extends Shows{
+public class Movie extends Shows {
 	protected String LeadActor;
 	public void setActor(String actor) {
 		this.LeadActor = actor;

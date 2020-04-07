@@ -2,7 +2,7 @@
 public abstract class Account {
 	protected String Username;
 	protected String Password;
-	protected Boolean IsManager;
+	protected boolean IsManager;
 	public void setUsername(String username) {
 		this.Username = username;
 	}

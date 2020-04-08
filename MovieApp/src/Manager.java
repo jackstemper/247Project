@@ -5,6 +5,7 @@ public class Manager extends Account {
 	protected String Password;
 	protected boolean IsManager;
 	protected Movie[] Movies;
+	
 	public void changeEvent() {
 		return;
 	}

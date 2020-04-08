@@ -22,4 +22,7 @@ public class Movie extends Shows {
 	public void getDetails() {
 		System.out.println("The movie " + this.Title + " features " + this.LeadActor +".");
 	}
+	public void print() {
+		System.out.println("Movie name:" +getTitle());
+	}
 }

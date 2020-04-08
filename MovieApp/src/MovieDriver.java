@@ -33,7 +33,7 @@ public class MovieDriver {
 					movieApp.viewTheaters();
 					break;
 				case(1):
-					movieApp.goToTheater();
+					movieApp.printAMovie(movieApp.Theaters[1].Movies[1]);
 					break;
 				case(2):
 					movieApp.makeAccount();

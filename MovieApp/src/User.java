@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/*
+* User Class : Extends Account, holds tickets of the user, allows user to create account
+*/
 public class User extends Account {
 	protected User user;
 	protected String Username;

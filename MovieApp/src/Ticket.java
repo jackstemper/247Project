@@ -6,10 +6,10 @@ public class Ticket extends MovieApp {
 	protected Double Time;
 	protected String Venue;
 	private int BORDERBUFFER = 4;
-	public Ticket(String title, Double time, String venue) {
-		this.Title = title;
-		this.Time = time;
-		this.Venue = venue;
+	public Ticket() {
+		this.Title = Title;
+		this.Time = Time;
+		this.Venue = Venue;
 	}
 	public void setTitle(String title) {
 		this.Title = title;

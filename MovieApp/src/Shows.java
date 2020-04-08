@@ -56,7 +56,7 @@ public abstract class Shows extends MovieApp {
 		} else {
 			System.out.println("The showing is full");
 		}
-		Ticket retTicket = new Ticket(this.Title, this.Time, this.Venue);
+		Ticket retTicket = new Ticket();
 		return retTicket;
 	}
 

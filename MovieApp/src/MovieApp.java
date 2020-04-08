@@ -4,8 +4,6 @@ import java.util.Arrays;
 * makes a new user an account, prints a users ticket
 */
 public class MovieApp {
-	protected String Title, Venue;
-	protected double Time;
 	protected Theater[] Theaters;
 	protected Auditorium[] Auditoriums;
 	public void load() {
@@ -30,7 +28,7 @@ public class MovieApp {
 		user.createAccount(user);
 	}
 	public void displayTix() {
-		Ticket ticket = new Ticket(Title, Time, Venue);
+		Ticket ticket = new Ticket();
 		ticket.printTicket();
 	}
 }

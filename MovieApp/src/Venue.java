@@ -1,5 +1,5 @@
 
-public abstract class Venue extends MovieApp{
+public class Venue extends MovieApp{
 	protected String Address;
 	protected String Name;
 	public String getAddress() {

@@ -37,6 +37,7 @@ public class MovieDriver {
 		Movie[] CarmikeList = {Matrix, Community};
 		Theater Carmike = new Theater("Carmike", "457984 Greendale Rd.", CarmikeList);
 		Theaters[1] = Carmike;
+		Account[] Accounts = {Guest, Existing, Employee};
 	}
 	public void viewTheaters() {
 		for(int i =0; i<Theaters.length;i++) {

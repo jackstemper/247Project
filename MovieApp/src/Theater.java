@@ -20,5 +20,11 @@ public class Theater extends Venue {
 	public void displayInfo() {
 		System.out.println(Arrays.toString(Movies));
 	}
+	public void printMovies() {
+		System.out.println("The movies showing at " + this.Name + "are:");
+		for(int i=0; i<Movies.length;i++) {
+			System.out.println(Movies[i].getTitle() + "at: " + Movies[i].getTime());
+		}
+	}
 
 }

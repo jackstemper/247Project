@@ -1,5 +1,8 @@
 import java.util.Arrays;
-
+/* 
+* Theater Class : extends Venue , holds constructor for Theater, functions for setting and getting the 
+* movie array, displays the Movie array contents
+*/
 public class Theater extends Venue {
 
 	protected Movie[] Movies;

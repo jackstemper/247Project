@@ -1,4 +1,6 @@
-
+/*
+* Concert Class : Extends Shows class, gets/sets Band, 
+*/
 public class Concert extends Shows {
 	protected String Band;
 	public String getBand() {

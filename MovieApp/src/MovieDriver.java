@@ -1,5 +1,8 @@
 import java.util.Scanner;
-
+/*
+* MovieDriver class : Holds an array of Home and Venue Options that give the basic functions of the app, runs the 
+* function based on the number the user inputs on the home page
+*/
 public class MovieDriver {
 	private Scanner scanner;
 	private MovieApp movieApp;

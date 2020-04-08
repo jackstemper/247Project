@@ -29,7 +29,7 @@ public class MovieDriver {
 		Jungle.print();
 		Movie[] AMCList = {Frozen, Jungle};
 		Theater AMC = new Theater("AMC", "6969 Test Dr.", AMCList);
-		Theaters[0]=(AMC);
+		Theaters[0]= AMC;
 		System.out.println(AMC.Movies[0].getTitle());
 		Movie Matrix = new Movie("The Matrix", 11.50, 8.50, "Carmike", 40, 0, "Neo");
 		Movie Community = new Movie("Community: the Movie", 11.50, 7.0,"Carmkie", 40, 0, "Abhed");
@@ -59,6 +59,7 @@ public class MovieDriver {
 		}
 		
 	}
+
 	public void makeAccount() {
 		User user = new User();
 		user.createAccount(user);

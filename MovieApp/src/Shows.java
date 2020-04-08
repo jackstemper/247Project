@@ -1,5 +1,7 @@
 import java.util.Scanner;
-
+/*
+* Shows class : extends MovieApp, holds getters/setters for Show Details (title, price, time, venue, capacity)
+*/
 public abstract class Shows extends MovieApp {
 	protected static String[][] seat = new String[6][10];
 	Scanner keyboard = new Scanner(System.in);
@@ -46,6 +48,7 @@ public abstract class Shows extends MovieApp {
 	public void setCapacityCounter(int capacityCounter) {
 		CapacityCounter = capacityCounter;
 	}
+	//buyTicket function : if show has room, allows user to choose the seat, updates capacity counter, if not displays show is full 
 	public Ticket buyTicket() {
 		if(Capacity>CapacityCounter) {
 			chooseSeat();
@@ -57,7 +60,10 @@ public abstract class Shows extends MovieApp {
 		return retTicket;
 	}
 
-
+	/*
+	* ChooseSeat function : allows user to choose his/her seat buy reading input of row and collumn #, seats that are full 
+	* show a '#' to indicate the user can not pick that seat
+	*/
 	public void chooseSeat() {
 		boolean correctSeat = false;
 		while (correctSeat = false) {

@@ -6,6 +6,8 @@ import java.util.Arrays;
 public class MovieApp {
 	protected Theater[] Theaters;
 	protected Auditorium[] Auditoriums;
+	
+	//loading test movie and theater information
 	public void load() {
 		Movie Frozen = new Movie("Frozen 2", 9.50, 6.50, "AMC", 60, 0, "Elsa");
 		Movie Jungle = new Movie("The Jungle Book", 9.50, 5.0, "AMC", 60, 0, "Mowgli");

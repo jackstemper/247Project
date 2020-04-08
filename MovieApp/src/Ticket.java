@@ -1,4 +1,6 @@
-
+/*
+* Ticket Class : holds getters/seters for title , time , venue, prints ticket
+*/
 public class Ticket extends MovieApp {
 	protected String Title;
 	protected Double Time;

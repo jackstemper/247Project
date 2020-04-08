@@ -1,5 +1,8 @@
 import java.util.Arrays;
-
+/*
+* MovieApp Class : Extends Shows class , holds function that views Theaters , finds the address of the theaters , 
+* makes a new user an account, prints a users ticket
+*/
 public class MovieApp {
 	protected String Title, Venue;
 	protected double Time;

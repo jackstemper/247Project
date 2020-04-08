@@ -21,15 +21,16 @@ public class User extends Account {
 	}
 
 	public User createAccount(User user) {
-		System.out.println("/nEnter your desired username: ");
+		System.out.println("Enter your desired username: ");
 		Username = keyboard.next();
-		System.out.println("/nEnter a password for " + Username + ": ");
+		System.out.println("Enter a password for " + Username + ": ");
 		Password = keyboard.next();
 
 		user = new User();
 		user.Username = Username;
 		user.Password = Password;
 
+		System.out.println("Account created for " + user.Username);
 		return user;
 
 	}

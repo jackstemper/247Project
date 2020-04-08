@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
+
 /*
 * MovieDriver class : Holds an array of Home and Venue Options that give the basic functions of the app, runs the 
 * function based on the number the user inputs on the home page
@@ -15,7 +16,7 @@ public class MovieDriver {
 	// Buy Ticket should increase the capacity counter in the Movie/play, and return a ticket to the account Ticket[]
 	// GbttHS is obv, just break out to Home Screen
 	private String[] VenueOptions = {"View Movies", "Buy a Ticket", "Go back to the Home Screen"};
-	private Theater[] Theaters;
+	private Theater[] Theaters = new Theater[10];
 	protected Auditorium[] Auditoriums;
 	MovieDriver(){
 		scanner = new Scanner(System.in);
@@ -28,7 +29,7 @@ public class MovieDriver {
 		Jungle.print();
 		Movie[] AMCList = {Frozen, Jungle};
 		Theater AMC = new Theater("AMC", "6969 Test Dr.", AMCList);
-		Theaters[0] = AMC;
+		Theaters[0]=(AMC);
 		System.out.println(AMC.Movies[0].getTitle());
 		Movie Matrix = new Movie("The Matrix", 11.50, 8.50, "Carmike", 40, 0, "Neo");
 		Movie Community = new Movie("Community: the Movie", 11.50, 7.0,"Carmkie", 40, 0, "Abhed");

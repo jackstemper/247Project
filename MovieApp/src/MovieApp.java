@@ -20,7 +20,7 @@ public class MovieApp {
 	}
 	public void goToTheater() {
 		Venue venue = new Venue();
-		venue.getAddress(venue);
+		venue.getAddress();
 	}
 	public void makeAccount() {
 		User user = new User();

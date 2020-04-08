@@ -16,7 +16,7 @@ public class MovieDriver {
 	// Buy Ticket should increase the capacity counter in the Movie/play, and return a ticket to the account Ticket[]
 	// GbttHS is obv, just break out to Home Screen
 	private String[] VenueOptions = {"View Movies", "Buy a Ticket", "Go back to the Home Screen"};
-	private Theater[] Theaters = new Theater[10];
+	private Theater[] Theaters = new Theater[2];
 	protected Auditorium[] Auditoriums;
 	MovieDriver(){
 		scanner = new Scanner(System.in);
@@ -39,7 +39,7 @@ public class MovieDriver {
 	}
 	public void viewTheaters() {
 		for(int i =0; i<Theaters.length;i++) {
-			System.out.println(Theaters[i].getName() + "which is at " + Theaters[i].getAddress());
+			System.out.println(Theaters[i].getName() + " which is at " + Theaters[i].getAddress());
 		}
 	}
 	

@@ -19,7 +19,8 @@ public class MovieApp {
 		System.out.println(Arrays.toString(Theaters));
 	}
 	public void goToTheater() {
-		// Needs to be done
+		Venue venue = new Venue();
+		venue.getAddress(venue);
 	}
 	public void makeAccount() {
 		User user = new User();

@@ -1,4 +1,7 @@
-
+/*
+* Account Class : extends MovieApp, functions for setting and getting the username 
+* and password
+*/
 public abstract class Account extends MovieApp{
 	protected String Username;
 	protected String Password;

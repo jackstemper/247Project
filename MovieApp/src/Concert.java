@@ -1,5 +1,6 @@
 /*
-* Concert Class : Extends Shows class, gets/sets Band, 
+* Concert Class : Extends Shows class, gets/sets Band, holds function that displays details of the concert title 
+* and featured band
 */
 public class Concert extends Shows {
 	protected String Band;

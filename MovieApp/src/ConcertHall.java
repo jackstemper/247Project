@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+/*
+* MovieApp Class : gets/sets Concerts, holds function that displays details of the concerts array
+*/
 public class ConcertHall extends Venue {
 	protected Concert[] Concerts;
 	public Concert[] getConcerts() {

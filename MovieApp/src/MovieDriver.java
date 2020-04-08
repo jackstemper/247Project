@@ -18,6 +18,7 @@ public class MovieDriver {
 	private String[] VenueOptions = {"View Movies", "Buy a Ticket", "Go back to the Home Screen"};
 	private Theater[] Theaters = new Theater[2];
 	protected Auditorium[] Auditoriums;
+	private Account[] Accounts;
 	MovieDriver(){
 		scanner = new Scanner(System.in);
 	}

@@ -1,4 +1,7 @@
-
+/*
+* Movie Class : Extends Shows class, holds Movie constructor, functions that sets and gets the Lead Actor, 
+* prints the movie title as well as the lead actor
+*/
 public class Movie extends Shows {
 	protected String LeadActor;
 	public Movie(String title, Double price, Double time, String venue, int capacity, int capacityCounter, String lead) {

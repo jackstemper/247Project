@@ -1,4 +1,7 @@
-
+/*
+* Venue Class : extends MovieApp, functions for setting and getting the Address and 
+* Name of Venue
+*/
 public class Venue extends MovieApp{
 	protected String Address;
 	protected String Name;

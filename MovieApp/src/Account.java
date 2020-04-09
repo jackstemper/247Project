@@ -2,10 +2,15 @@
 * Account Class : extends MovieApp, functions for setting and getting the username 
 * and password
 */
-public abstract class Account extends MovieApp{
+public class Account{
 	protected String Username;
 	protected String Password;
 	protected boolean IsManager;
+	public Account(String username, String password, boolean isManager) {
+		Username = username;
+		Password = password;
+		IsManager = isManager;
+	}
 	public void setUsername(String username) {
 		this.Username = username;
 	}

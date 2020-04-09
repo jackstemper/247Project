@@ -19,6 +19,8 @@ public class MovieDriver {
 	private Theater[] Theaters = new Theater[2];
 	protected Auditorium[] Auditoriums;
 	private Account[] Accounts = new Account[2];
+	protected boolean FALSE = false;
+	protected boolean TRUE = true;
 	MovieDriver(){
 		scanner = new Scanner(System.in);
 	}
@@ -37,10 +39,10 @@ public class MovieDriver {
 		Movie[] CarmikeList = {Matrix, Community};
 		Theater Carmike = new Theater("Carmike", "457984 Greendale Rd.", CarmikeList);
 		Theaters[1] = Carmike;
-		Account NewUser = new Account(User, Default);
-		Accounts[1] = NewUser;
-		Account Manager = new Account(Manager, Password);
-		Accounts[2] = Manager;
+		Account NewUser = new Account("User", "Default", FALSE);
+		Accounts[0] = NewUser;
+		Account Manager = new Account("Manager", "Password", TRUE);
+		Accounts[1] = Manager;
 		//Account[] Accounts = {Guest, Existing, Employee};
 	}
 	public void viewTheaters() {

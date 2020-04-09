@@ -8,6 +8,7 @@ public class Manager extends Account {
 	protected String Password;
 	protected boolean IsManager;
 	protected Movie[] Movies;
+	protected Manager manager;
 
 
 
@@ -54,7 +55,6 @@ public class Manager extends Account {
 		switch(option){
 			case(1):
 				System.out.println("Currently I'm trying to figure out how to get the movies here");
-				break;
 			case(2):
 				break;
 

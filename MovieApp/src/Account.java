@@ -6,6 +6,9 @@ public class Account{
 	protected String Username;
 	protected String Password;
 	protected boolean IsManager;
+	public Account(){
+
+	}
 	public Account(String username, String password, boolean isManager) {
 		Username = username;
 		Password = password;

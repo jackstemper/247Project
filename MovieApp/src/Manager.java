@@ -13,8 +13,8 @@ public class Manager extends Account {
 
 
 	protected Manager(){
-		Username = "Manager";
-		Password = "Password";
+		this.Username = "Manager";
+		this.Password = "Password";
 		IsManager = true;
 
 	}

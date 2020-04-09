@@ -59,6 +59,10 @@ public class MovieDriver {
 		}
 		
 	}
+	public void managerLogin(){
+		Manager manager = new Manager();
+		manager.managerLogin();
+	}
 
 	public void makeAccount() {
 		User user = new User();
@@ -72,6 +76,7 @@ public class MovieDriver {
 		System.out.println("Loading the App");
 		load();
 		System.out.println("Welcome to our Columbia Movie Theater App");
+		managerLogin();
 		while(true) {
 			displayHome();
 			int userCommand = getAction(HomeOptions.length);

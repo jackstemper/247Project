@@ -25,15 +25,13 @@ public class MovieDriver {
 		scanner = new Scanner(System.in);
 	}
 	
-	//loading test movie and theater information
+	//loading test movie and theater and user information
 	public void load() {
 		Movie Frozen = new Movie("Frozen 2", 9.50, 6.50, "AMC", 60, 0, "Elsa");
 		Movie Jungle = new Movie("The Jungle Book", 9.50, 5.0, "AMC", 60, 0, "Mowgli");
-		Jungle.print();
 		Movie[] AMCList = {Frozen, Jungle};
 		Theater AMC = new Theater("AMC", "6969 Test Dr.", AMCList);
 		Theaters[0]= AMC;
-		System.out.println(AMC.Movies[0].getTitle());
 		Movie Matrix = new Movie("The Matrix", 11.50, 8.50, "Carmike", 40, 0, "Neo");
 		Movie Community = new Movie("Community: the Movie", 11.50, 7.0,"Carmike", 40, 0, "Abhed");
 		Movie[] CarmikeList = {Matrix, Community};
@@ -70,8 +68,6 @@ public class MovieDriver {
 	public void managerLogin(){
 		Manager manager = new Manager();
 		manager.managerLogin();
-
-
 	}
 
 	public void makeAccount() {
@@ -86,11 +82,14 @@ public class MovieDriver {
 		System.out.println("Loading the App");
 		load();
 		System.out.println("Welcome to our Columbia Movie Theater App");
-		managerLogin();
+		//managerLogin();
 		while(true) {
 			displayHome();
 			int userCommand = getAction(HomeOptions.length);
-			if(userCommand == HomeOptions.length -1) break;
+			if(userCommand == HomeOptions.length -1) {
+				System.out.println("Thank you for using our app, sorry it sucks");
+				break;
+			}
 			switch(userCommand) {
 				case(0):
 					viewTheaters();
@@ -98,7 +97,7 @@ public class MovieDriver {
 				case(1):
 					System.out.println("What theater would you like to enter?:");
 					for(int i =0; i<Theaters.length;i++) {
-						System.out.println(Theaters[i].getName() + " which is at " + Theaters[i].getAddress());
+						System.out.println(i +": " +Theaters[i].getName() + " which is at " + Theaters[i].getAddress());
 					}
 					int theaterSelection = getAction(Theaters.length);
 					goToTheater(Theaters[theaterSelection]);

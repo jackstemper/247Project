@@ -33,7 +33,7 @@ public class MovieDriver {
 		Theaters[0]= AMC;
 		System.out.println(AMC.Movies[0].getTitle());
 		Movie Matrix = new Movie("The Matrix", 11.50, 8.50, "Carmike", 40, 0, "Neo");
-		Movie Community = new Movie("Community: the Movie", 11.50, 7.0,"Carmkie", 40, 0, "Abhed");
+		Movie Community = new Movie("Community: the Movie", 11.50, 7.0,"Carmike", 40, 0, "Abhed");
 		Movie[] CarmikeList = {Matrix, Community};
 		Theater Carmike = new Theater("Carmike", "457984 Greendale Rd.", CarmikeList);
 		Theaters[1] = Carmike;

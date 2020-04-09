@@ -18,6 +18,7 @@ public class MovieDriver {
 	private String[] VenueOptions = {"View Movies", "Buy a Ticket", "Go back to the Home Screen"};
 	private Theater[] Theaters = new Theater[2];
 	protected Auditorium[] Auditoriums;
+	private Account[] Accounts;
 	MovieDriver(){
 		scanner = new Scanner(System.in);
 	}
@@ -36,6 +37,7 @@ public class MovieDriver {
 		Movie[] CarmikeList = {Matrix, Community};
 		Theater Carmike = new Theater("Carmike", "457984 Greendale Rd.", CarmikeList);
 		Theaters[1] = Carmike;
+		Account[] Accounts = {Guest, Existing, Employee};
 	}
 	public void viewTheaters() {
 		for(int i =0; i<Theaters.length;i++) {

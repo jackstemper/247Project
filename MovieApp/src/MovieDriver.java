@@ -97,7 +97,7 @@ public class MovieDriver {
 				case(1):
 					System.out.println("What theater would you like to enter?:");
 					for(int i =0; i<Theaters.length;i++) {
-						System.out.println(i +": " +Theaters[i].getName() + " which is at " + Theaters[i].getAddress());
+						System.out.println(i+1 +": " +Theaters[i].getName() + " which is at " + Theaters[i].getAddress());
 					}
 					int theaterSelection = getAction(Theaters.length);
 					goToTheater(Theaters[theaterSelection]);

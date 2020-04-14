@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ada901-141e-4724-b401-6d92e5d090f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieAppTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieAppTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieAppTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

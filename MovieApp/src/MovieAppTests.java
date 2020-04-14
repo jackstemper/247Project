@@ -30,6 +30,7 @@ public class MovieAppTests {
 
     @Test
     public void testUser(){
+        //Testing user constructor
         User user = new User();
         user.Username = "JoeExotic";
         user.Password = "TigerKing";
@@ -38,6 +39,7 @@ public class MovieAppTests {
 
     @Test
     public void testManager(){
+        //Testing default constructor and comparing to generated user
         Manager manager1 = new Manager();
         Manager manager2 = new Manager();
         manager2.Username = "CarolBaskins";
@@ -47,6 +49,7 @@ public class MovieAppTests {
 
     @Test
     public void testLoad(){
+        //Testing object arrays used in MovieDriver class
         Movie[] Movies = new Movie[4];
         Theater[] Theaters = new Theater[2];
         Movie Frozen = new Movie("Frozen 2", 9.50, 6.50, "AMC", 60, 0, "Elsa");
@@ -69,6 +72,7 @@ public class MovieAppTests {
 
     @Test
     public void testCreateTicket(){
+        //Testing ticket constructor
         Ticket ticket = new Ticket();
         ticket.Title = "Frozen 2";
         ticket.Venue = "AMC";
@@ -78,6 +82,7 @@ public class MovieAppTests {
 
     @Test
     public void testIsManager(){
+        //IsManager should only be true for manager class
         Manager manager = new Manager();
         User user = new User();
         assertNotEquals(manager.IsManager, user.IsManager);

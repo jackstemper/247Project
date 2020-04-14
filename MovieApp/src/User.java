@@ -9,19 +9,22 @@ public class User extends Account {
 	protected String Username;
 	protected String Password;
 	protected Ticket[] Tickets;
+
 	public Ticket[] getTickets() {
 		return Tickets;
 	}
+
 	public void setTickets(Ticket[] tickets) {
 		Tickets = tickets;
 	}
+
 	Scanner keyboard = new Scanner(System.in);
 
 	public User() {
 		this.Username = "User";
 		this.Password = "Default";
 	}
-	@Test
+
 	public User createAccount(User user) {
 		System.out.println("Enter your desired username: ");
 		Username = keyboard.next();
@@ -35,11 +38,5 @@ public class User extends Account {
 		System.out.println("Account created for " + user.Username);
 		return user;
 
-	}
-	@Test
-	public User testUser(User user){
-		user.Username = "Joe";
-		user.Password = "Exotic";
-		return user;
 	}
 }

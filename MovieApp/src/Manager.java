@@ -23,7 +23,6 @@ public class Manager extends Account {
 	@Test
 	public void managerLogin(){
 		Manager manager = new Manager();
-		manager = manager.testManager(manager);
 		System.out.println("Are you a manager? Enter 1 for yes or 2 for no: ");
 		Scanner keyboard = new Scanner(System.in);
 		int answer = keyboard.nextInt();
@@ -64,12 +63,6 @@ public class Manager extends Account {
 
 		}
 	}
-	@Test
-	public Manager testManager(Manager manager){
-		manager = new Manager();
-		manager.Username = "Jeff";
-		manager.Password = "Lowe";
-		return manager;
-	}
+
 
 }

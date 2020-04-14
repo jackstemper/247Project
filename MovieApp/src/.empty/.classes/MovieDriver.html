@@ -42,26 +42,26 @@
   <td class="name">MovieDriver</td>
 <td class="coverageStat">
   <span class="percent">
-    100%
+    0%
   </span>
   <span class="absValue">
-    (1/ 1)
+    (0/ 1)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    90.9%
+    0%
   </span>
   <span class="absValue">
-    (10/ 11)
+    (0/ 11)
   </span>
 </td>
 <td class="coverageStat">
   <span class="percent">
-    93.8%
+    0%
   </span>
   <span class="absValue">
-    (75/ 80)
+    (0/ 70)
   </span>
 </td>
 </tr>
@@ -90,145 +90,143 @@
 <i>16</i>&nbsp;	// Checkout goes to a theater for Venue Options
 <i>17</i>&nbsp;	// Make Account makes it so that you can get a ticket[] to save the tickets you get in a session
 <i>18</i>&nbsp;	// View Tickets shows your tickets
-<b class="fc"><i>19</i>&nbsp;	private String[] HomeOptions = {&quot;View Theaters&quot;, &quot;Checkout Theater&quot;,&quot;Make account&quot;, &quot;View Tickets&quot;, &quot;Exit&quot;};</b>
+<b class="nc"><i>19</i>&nbsp;	private String[] HomeOptions = {&quot;View Theaters&quot;, &quot;Checkout Theater&quot;,&quot;Make account&quot;, &quot;View Tickets&quot;, &quot;Exit&quot;};</b>
 <i>20</i>&nbsp;	// View Movies should show the Name, Time, and the small description
 <i>21</i>&nbsp;	// Buy Ticket should increase the capacity counter in the Movie/play, and return a ticket to the account Ticket[]
 <i>22</i>&nbsp;	// GbttHS is obv, just break out to Home Screen
-<b class="fc"><i>23</i>&nbsp;	private String[] VenueOptions = {&quot;View Movies&quot;, &quot;Buy a Ticket&quot;, &quot;Go back to the Home Screen&quot;};</b>
-<b class="fc"><i>24</i>&nbsp;	private Theater[] Theaters = new Theater[2];</b>
+<b class="nc"><i>23</i>&nbsp;	private String[] VenueOptions = {&quot;View Movies&quot;, &quot;Buy a Ticket&quot;, &quot;Go back to the Home Screen&quot;};</b>
+<b class="nc"><i>24</i>&nbsp;	private Theater[] Theaters = new Theater[2];</b>
 <i>25</i>&nbsp;	protected Auditorium[] Auditoriums;
-<b class="fc"><i>26</i>&nbsp;	private Account[] Accounts = new Account[2];</b>
-<b class="fc"><i>27</i>&nbsp;	protected boolean FALSE = false;</b>
-<b class="fc"><i>28</i>&nbsp;	protected boolean TRUE = true;</b>
-<b class="fc"><i>29</i>&nbsp;	MovieDriver(){</b>
-<b class="fc"><i>30</i>&nbsp;		scanner = new Scanner(System.in);</b>
-<b class="fc"><i>31</i>&nbsp;	}</b>
+<b class="nc"><i>26</i>&nbsp;	private Account[] Accounts = new Account[2];</b>
+<b class="nc"><i>27</i>&nbsp;	protected boolean FALSE = false;</b>
+<b class="nc"><i>28</i>&nbsp;	protected boolean TRUE = true;</b>
+<b class="nc"><i>29</i>&nbsp;	MovieDriver(){</b>
+<b class="nc"><i>30</i>&nbsp;		scanner = new Scanner(System.in);</b>
+<i>31</i>&nbsp;	}
 <i>32</i>&nbsp;	
 <i>33</i>&nbsp;	//loading test movie and theater and user information
 <i>34</i>&nbsp;	public void load() {
-<b class="fc"><i>35</i>&nbsp;		Movie Frozen = new Movie(&quot;Frozen 2&quot;, 9.50, 6.50, &quot;AMC&quot;, 60, 0, &quot;Elsa&quot;);</b>
-<b class="fc"><i>36</i>&nbsp;		Movie Jungle = new Movie(&quot;The Jungle Book&quot;, 9.50, 5.0, &quot;AMC&quot;, 60, 0, &quot;Mowgli&quot;);</b>
-<b class="fc"><i>37</i>&nbsp;		Movie[] AMCList = {Frozen, Jungle};</b>
-<b class="fc"><i>38</i>&nbsp;		Theater AMC = new Theater(&quot;AMC&quot;, &quot;6969 Test Dr.&quot;, AMCList);</b>
-<b class="fc"><i>39</i>&nbsp;		Theaters[0]= AMC;</b>
-<b class="fc"><i>40</i>&nbsp;		Movie Matrix = new Movie(&quot;The Matrix&quot;, 11.50, 8.50, &quot;Carmike&quot;, 40, 0, &quot;Neo&quot;);</b>
-<b class="fc"><i>41</i>&nbsp;		Movie Community = new Movie(&quot;Community: the Movie&quot;, 11.50, 7.0,&quot;Carmike&quot;, 40, 0, &quot;Abhed&quot;);</b>
-<b class="fc"><i>42</i>&nbsp;		Movie[] CarmikeList = {Matrix, Community};</b>
-<b class="fc"><i>43</i>&nbsp;		Theater Carmike = new Theater(&quot;Carmike&quot;, &quot;457984 Greendale Rd.&quot;, CarmikeList);</b>
-<b class="fc"><i>44</i>&nbsp;		Theaters[1] = Carmike;</b>
-<b class="fc"><i>45</i>&nbsp;		Account NewUser = new Account(&quot;User&quot;, &quot;Default&quot;, FALSE);</b>
-<b class="fc"><i>46</i>&nbsp;		Accounts[0] = NewUser;</b>
-<b class="fc"><i>47</i>&nbsp;		Account Manager = new Account(&quot;Manager&quot;, &quot;Password&quot;, TRUE);</b>
-<b class="fc"><i>48</i>&nbsp;		Accounts[1] = Manager;</b>
+<b class="nc"><i>35</i>&nbsp;		Movie Frozen = new Movie(&quot;Frozen 2&quot;, 9.50, 6.50, &quot;AMC&quot;, 60, 0, &quot;Elsa&quot;);</b>
+<b class="nc"><i>36</i>&nbsp;		Movie Jungle = new Movie(&quot;The Jungle Book&quot;, 9.50, 5.0, &quot;AMC&quot;, 60, 0, &quot;Mowgli&quot;);</b>
+<b class="nc"><i>37</i>&nbsp;		Movie[] AMCList = {Frozen, Jungle};</b>
+<b class="nc"><i>38</i>&nbsp;		Theater AMC = new Theater(&quot;AMC&quot;, &quot;6969 Test Dr.&quot;, AMCList);</b>
+<b class="nc"><i>39</i>&nbsp;		Theaters[0]= AMC;</b>
+<b class="nc"><i>40</i>&nbsp;		Movie Matrix = new Movie(&quot;The Matrix&quot;, 11.50, 8.50, &quot;Carmike&quot;, 40, 0, &quot;Neo&quot;);</b>
+<b class="nc"><i>41</i>&nbsp;		Movie Community = new Movie(&quot;Community: the Movie&quot;, 11.50, 7.0,&quot;Carmike&quot;, 40, 0, &quot;Abhed&quot;);</b>
+<b class="nc"><i>42</i>&nbsp;		Movie[] CarmikeList = {Matrix, Community};</b>
+<b class="nc"><i>43</i>&nbsp;		Theater Carmike = new Theater(&quot;Carmike&quot;, &quot;457984 Greendale Rd.&quot;, CarmikeList);</b>
+<b class="nc"><i>44</i>&nbsp;		Theaters[1] = Carmike;</b>
+<b class="nc"><i>45</i>&nbsp;		Account NewUser = new Account(&quot;User&quot;, &quot;Default&quot;, FALSE);</b>
+<b class="nc"><i>46</i>&nbsp;		Accounts[0] = NewUser;</b>
+<b class="nc"><i>47</i>&nbsp;		Account Manager = new Account(&quot;Manager&quot;, &quot;Password&quot;, TRUE);</b>
+<b class="nc"><i>48</i>&nbsp;		Accounts[1] = Manager;</b>
 <i>49</i>&nbsp;		//Account[] Accounts = {Guest, Existing, Employee};
-<b class="fc"><i>50</i>&nbsp;	}</b>
-<i>51</i>&nbsp;	@Test
+<i>50</i>&nbsp;	}
+<i>51</i>&nbsp;
 <i>52</i>&nbsp;	public void viewTheaters() {
-<b class="fc"><i>53</i>&nbsp;		for(int i =0; i&lt;Theaters.length;i++) {</b>
-<b class="fc"><i>54</i>&nbsp;			System.out.println(Theaters[i].getName() + &quot; which is at &quot; + Theaters[i].getAddress());</b>
+<b class="nc"><i>53</i>&nbsp;		for(int i =0; i&lt;Theaters.length;i++) {</b>
+<b class="nc"><i>54</i>&nbsp;			System.out.println(Theaters[i].getName() + &quot; which is at &quot; + Theaters[i].getAddress());</b>
 <i>55</i>&nbsp;		}
-<b class="fc"><i>56</i>&nbsp;	}</b>
-<i>57</i>&nbsp;	@Test
+<i>56</i>&nbsp;	}
+<i>57</i>&nbsp;
 <i>58</i>&nbsp;	public void goToTheater(Theater theater) {
 <i>59</i>&nbsp;		while(true) {
-<b class="fc"><i>60</i>&nbsp;			System.out.println(&quot;Welcome to &quot; + theater.getName());</b>
-<b class="fc"><i>61</i>&nbsp;			int userCommand = getAction(VenueOptions.length);</b>
-<b class="fc"><i>62</i>&nbsp;			if(userCommand == VenueOptions.length -1) break;</b>
-<b class="fc"><i>63</i>&nbsp;			switch(userCommand) {</b>
+<b class="nc"><i>60</i>&nbsp;			System.out.println(&quot;Welcome to &quot; + theater.getName());</b>
+<b class="nc"><i>61</i>&nbsp;			int userCommand = getAction(VenueOptions.length);</b>
+<b class="nc"><i>62</i>&nbsp;			if(userCommand == VenueOptions.length -1) break;</b>
+<b class="nc"><i>63</i>&nbsp;			switch(userCommand) {</b>
 <i>64</i>&nbsp;				case(0):
-<b class="fc"><i>65</i>&nbsp;					theater.printMovies();</b>
-<b class="fc"><i>66</i>&nbsp;					break;</b>
+<b class="nc"><i>65</i>&nbsp;					theater.printMovies();</b>
+<b class="nc"><i>66</i>&nbsp;					break;</b>
 <i>67</i>&nbsp;				case(1):
 <i>68</i>&nbsp;					//theater.buyTicket();
 <i>69</i>&nbsp;					break;
 <i>70</i>&nbsp;			}
-<b class="fc"><i>71</i>&nbsp;		}</b>
+<b class="nc"><i>71</i>&nbsp;		}</b>
 <i>72</i>&nbsp;		
-<b class="fc"><i>73</i>&nbsp;	}</b>
-<i>74</i>&nbsp;	@Test
+<i>73</i>&nbsp;	}
+<i>74</i>&nbsp;
 <i>75</i>&nbsp;	public void login(){
-<b class="fc"><i>76</i>&nbsp;		Manager manager = new Manager();</b>
-<b class="fc"><i>77</i>&nbsp;		manager.managerLogin();</b>
-<b class="fc"><i>78</i>&nbsp;	}</b>
-<i>79</i>&nbsp;	@Test
+<b class="nc"><i>76</i>&nbsp;		Manager manager = new Manager();</b>
+<b class="nc"><i>77</i>&nbsp;		manager.managerLogin();</b>
+<i>78</i>&nbsp;	}
+<i>79</i>&nbsp;
 <i>80</i>&nbsp;	public void makeAccount() {
-<b class="fc"><i>81</i>&nbsp;		User user = new User();</b>
-<b class="fc"><i>82</i>&nbsp;		user.testUser(user);</b>
-<b class="fc"><i>83</i>&nbsp;		System.out.println(user.Username +&quot; &quot; + user.Password);</b>
+<b class="nc"><i>81</i>&nbsp;		User user = new User();</b>
+<b class="nc"><i>82</i>&nbsp;		user.createAccount(user);</b>
+<b class="nc"><i>83</i>&nbsp;		System.out.println(&quot;Your username and password are: &quot; + user.Username +&quot; &quot; + user.Password);</b>
 <i>84</i>&nbsp;
-<b class="fc"><i>85</i>&nbsp;	}</b>
+<i>85</i>&nbsp;	}
 <i>86</i>&nbsp;
 <i>87</i>&nbsp;	public void displayTix() {
 <b class="nc"><i>88</i>&nbsp;		Ticket ticket = new Ticket();</b>
 <b class="nc"><i>89</i>&nbsp;		ticket.printTicket();</b>
-<b class="nc"><i>90</i>&nbsp;	}</b>
-<i>91</i>&nbsp;	@Test
+<i>90</i>&nbsp;	}
+<i>91</i>&nbsp;
 <i>92</i>&nbsp;	public void run() {
-<b class="fc"><i>93</i>&nbsp;		System.out.println(&quot;Loading the App&quot;);</b>
-<b class="fc"><i>94</i>&nbsp;		load();</b>
-<b class="fc"><i>95</i>&nbsp;		System.out.println(&quot;Welcome to our Columbia Movie Theater App&quot;);</b>
-<b class="fc"><i>96</i>&nbsp;		login();</b>
+<b class="nc"><i>93</i>&nbsp;		System.out.println(&quot;Loading the App&quot;);</b>
+<b class="nc"><i>94</i>&nbsp;		load();</b>
+<b class="nc"><i>95</i>&nbsp;		System.out.println(&quot;Welcome to our Columbia Movie Theater App&quot;);</b>
+<b class="nc"><i>96</i>&nbsp;		login();</b>
 <i>97</i>&nbsp;
-<i>98</i>&nbsp;
-<i>99</i>&nbsp;
-<i>100</i>&nbsp;		while(true) {
-<b class="fc"><i>101</i>&nbsp;			displayHome();</b>
-<b class="fc"><i>102</i>&nbsp;			int userCommand = getAction(HomeOptions.length);</b>
-<b class="fc"><i>103</i>&nbsp;			if(userCommand == HomeOptions.length -1) {</b>
-<b class="fc"><i>104</i>&nbsp;				System.out.println(&quot;Thank you for using our app, sorry it sucks&quot;);</b>
-<b class="fc"><i>105</i>&nbsp;				break;</b>
-<i>106</i>&nbsp;			}
-<b class="fc"><i>107</i>&nbsp;			switch(userCommand) {</b>
-<i>108</i>&nbsp;				case(0):
-<b class="fc"><i>109</i>&nbsp;					viewTheaters();</b>
-<b class="fc"><i>110</i>&nbsp;					break;</b>
-<i>111</i>&nbsp;				case(1):
-<b class="fc"><i>112</i>&nbsp;					System.out.println(&quot;What theater would you like to enter?:&quot;);</b>
-<b class="fc"><i>113</i>&nbsp;					for(int i =0; i&lt;Theaters.length;i++) {</b>
-<b class="fc"><i>114</i>&nbsp;						System.out.println(i+1 +&quot;: &quot; +Theaters[i].getName() + &quot; which is at &quot; + Theaters[i].getAddress());</b>
-<i>115</i>&nbsp;					}
-<b class="fc"><i>116</i>&nbsp;					int theaterSelection = getAction(Theaters.length);</b>
-<b class="fc"><i>117</i>&nbsp;					goToTheater(Theaters[theaterSelection]);</b>
-<b class="fc"><i>118</i>&nbsp;					break;</b>
-<i>119</i>&nbsp;				case(2):
-<b class="fc"><i>120</i>&nbsp;					makeAccount();</b>
-<b class="fc"><i>121</i>&nbsp;					break;</b>
-<i>122</i>&nbsp;				case(3):
-<b class="nc"><i>123</i>&nbsp;					System.out.println(&quot;Under Construction&quot;);</b>
-<i>124</i>&nbsp;					//displayTix();
-<i>125</i>&nbsp;					break;
-<b class="fc"><i>126</i>&nbsp;			}</b>
-<b class="fc"><i>127</i>&nbsp;		}</b>
-<i>128</i>&nbsp;	}
+<i>98</i>&nbsp;		while(true) {
+<b class="nc"><i>99</i>&nbsp;			displayHome();</b>
+<b class="nc"><i>100</i>&nbsp;			int userCommand = getAction(HomeOptions.length);</b>
+<b class="nc"><i>101</i>&nbsp;			if(userCommand == HomeOptions.length -1) {</b>
+<b class="nc"><i>102</i>&nbsp;				System.out.println(&quot;Thank you for using our app, sorry it sucks&quot;);</b>
+<b class="nc"><i>103</i>&nbsp;				break;</b>
+<i>104</i>&nbsp;			}
+<b class="nc"><i>105</i>&nbsp;			switch(userCommand) {</b>
+<i>106</i>&nbsp;				case(0):
+<b class="nc"><i>107</i>&nbsp;					viewTheaters();</b>
+<b class="nc"><i>108</i>&nbsp;					break;</b>
+<i>109</i>&nbsp;				case(1):
+<b class="nc"><i>110</i>&nbsp;					System.out.println(&quot;What theater would you like to enter?:&quot;);</b>
+<b class="nc"><i>111</i>&nbsp;					for(int i =0; i&lt;Theaters.length;i++) {</b>
+<b class="nc"><i>112</i>&nbsp;						System.out.println(i+1 +&quot;: &quot; +Theaters[i].getName() + &quot; which is at &quot; + Theaters[i].getAddress());</b>
+<i>113</i>&nbsp;					}
+<b class="nc"><i>114</i>&nbsp;					int theaterSelection = getAction(Theaters.length);</b>
+<b class="nc"><i>115</i>&nbsp;					goToTheater(Theaters[theaterSelection]);</b>
+<b class="nc"><i>116</i>&nbsp;					break;</b>
+<i>117</i>&nbsp;				case(2):
+<b class="nc"><i>118</i>&nbsp;					makeAccount();</b>
+<b class="nc"><i>119</i>&nbsp;					break;</b>
+<i>120</i>&nbsp;				case(3):
+<b class="nc"><i>121</i>&nbsp;					System.out.println(&quot;Under Construction&quot;);</b>
+<i>122</i>&nbsp;					//displayTix();
+<i>123</i>&nbsp;					break;
+<i>124</i>&nbsp;			}
+<b class="nc"><i>125</i>&nbsp;		}</b>
+<i>126</i>&nbsp;	}
+<i>127</i>&nbsp;
+<i>128</i>&nbsp;
 <i>129</i>&nbsp;
-<i>130</i>&nbsp;
-<i>131</i>&nbsp;
-<b class="fc"><i>132</i>&nbsp;	private void displayHome() {</b>
-<b class="fc"><i>133</i>&nbsp;		System.out.println(&quot;--------- Home Page ---------&quot;);</b>
-<b class="fc"><i>134</i>&nbsp;		for(int i =0; i&lt; HomeOptions.length; i++) {</b>
-<i>135</i>&nbsp;			System.out.println(&quot;Press &quot; + (i+1) + &quot; for &quot; + HomeOptions[i]);
-<b class="fc"><i>136</i>&nbsp;		}</b>
-<i>137</i>&nbsp;	}
-<b class="fc"><i>138</i>&nbsp;	private int getAction(int choices) {</b>
-<b class="fc"><i>139</i>&nbsp;		System.out.print(&quot;What would you like to do?: &quot;);</b>
-<b class="fc"><i>140</i>&nbsp;		String input = scanner.nextLine();</b>
-<b class="fc"><i>141</i>&nbsp;		int command = Integer.parseInt(input) - 1;</b>
-<b class="nc"><i>142</i>&nbsp;		if(command &gt;= 0 &amp;&amp; command &lt;= choices -1) return command;</b>
-<i>143</i>&nbsp;		return -1;
-<i>144</i>&nbsp;	}
-<i>145</i>&nbsp;	
-<b class="fc"><i>146</i>&nbsp;	public static void main(String[] args) {</b>
-<b class="fc"><i>147</i>&nbsp;		MovieDriver MovieDriver = new MovieDriver();</b>
-<b class="fc"><i>148</i>&nbsp;		MovieDriver.run();</b>
-<i>149</i>&nbsp;	}
-<i>150</i>&nbsp;
-<i>151</i>&nbsp;}
+<i>130</i>&nbsp;	private void displayHome() {
+<b class="nc"><i>131</i>&nbsp;		System.out.println(&quot;--------- Home Page ---------&quot;);</b>
+<b class="nc"><i>132</i>&nbsp;		for(int i =0; i&lt; HomeOptions.length; i++) {</b>
+<b class="nc"><i>133</i>&nbsp;			System.out.println(&quot;Press &quot; + (i+1) + &quot; for &quot; + HomeOptions[i]);</b>
+<i>134</i>&nbsp;		}
+<i>135</i>&nbsp;	}
+<i>136</i>&nbsp;	private int getAction(int choices) {
+<b class="nc"><i>137</i>&nbsp;		System.out.print(&quot;What would you like to do?: &quot;);</b>
+<b class="nc"><i>138</i>&nbsp;		String input = scanner.nextLine();</b>
+<b class="nc"><i>139</i>&nbsp;		int command = Integer.parseInt(input) - 1;</b>
+<b class="nc"><i>140</i>&nbsp;		if(command &gt;= 0 &amp;&amp; command &lt;= choices -1) return command;</b>
+<b class="nc"><i>141</i>&nbsp;		return -1;</b>
+<i>142</i>&nbsp;	}
+<i>143</i>&nbsp;	
+<i>144</i>&nbsp;	public static void main(String[] args) {
+<b class="nc"><i>145</i>&nbsp;		MovieDriver MovieDriver = new MovieDriver();</b>
+<b class="nc"><i>146</i>&nbsp;		MovieDriver.run();</b>
+<i>147</i>&nbsp;	}
+<i>148</i>&nbsp;
+<i>149</i>&nbsp;}
 </div>
 </div>
 
 <div class="footer">
     
-    <div style="float:right;">generated on 2020-04-14 09:36</div>
+    <div style="float:right;">generated on 2020-04-14 11:37</div>
 </div>
 </body>
 </html>

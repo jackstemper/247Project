@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75ada901-141e-4724-b401-6d92e5d090f3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MovieAppTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieDriver.java" afterDir="false" />
@@ -47,7 +48,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.MovieAppTests">
     <configuration name="MovieDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MovieDriver" />
       <module name="src" />
@@ -55,8 +56,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieAppTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieAppTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieAppTests.testManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieAppTests" />
+      <option name="METHOD_NAME" value="testManager" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieAppTests.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MovieAppTests" />
+      <option name="METHOD_NAME" value="testUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieAppTests" />
+        <item itemvalue="JUnit.MovieAppTests.testUser" />
+        <item itemvalue="JUnit.MovieAppTests.testManager" />
         <item itemvalue="Application.MovieDriver" />
       </list>
     </recent_temporary>
@@ -95,22 +128,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="358" y="79" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586828676059" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586871153260">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586878616001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586871153260">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586878616001" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586878616001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586871153260">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586878616001" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586878616001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586871153260">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586878616001" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586878616001">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586878616001" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586827639891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -133,6 +166,7 @@
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586827573823" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/src$MovieAppTests.ic" NAME="MovieAppTests Coverage Results" MODIFIED="1586878615970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/src$MovieDriver.ic" NAME="MovieDriver Coverage Results" MODIFIED="1586871153229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

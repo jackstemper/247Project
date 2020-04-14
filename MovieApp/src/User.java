@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import java.util.Scanner;
 /*
 * User Class : Extends Account, holds tickets of the user, allows user to create account
@@ -19,7 +21,7 @@ public class User extends Account {
 		this.Username = "User";
 		this.Password = "Default";
 	}
-
+	@Test
 	public User createAccount(User user) {
 		System.out.println("Enter your desired username: ");
 		Username = keyboard.next();

@@ -1,0 +1,113 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Theater</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Theater (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Theater</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    40%
+  </span>
+  <span class="absValue">
+    (2/ 5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    64.3%
+  </span>
+  <span class="absValue">
+    (9/ 14)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import java.util.Arrays;
+<i>2</i>&nbsp;/* 
+<i>3</i>&nbsp;* Theater Class : extends Venue , holds constructor for Theater, functions for setting and getting the 
+<i>4</i>&nbsp;* movie array, displays the Movie array contents
+<i>5</i>&nbsp;*/
+<i>6</i>&nbsp;public class Theater extends Venue {
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;	protected Movie[] Movies;
+<b class="fc"><i>9</i>&nbsp;	public Theater(String name, String address, Movie[] movies) {</b>
+<b class="fc"><i>10</i>&nbsp;		Address = address;</b>
+<b class="fc"><i>11</i>&nbsp;		Name = name;</b>
+<b class="fc"><i>12</i>&nbsp;		Movies = movies;</b>
+<b class="fc"><i>13</i>&nbsp;	}</b>
+<i>14</i>&nbsp;	public Movie[] getMovies() {
+<b class="nc"><i>15</i>&nbsp;		return Movies;</b>
+<i>16</i>&nbsp;	}
+<i>17</i>&nbsp;	public void setMovies(Movie[] movies) {
+<b class="nc"><i>18</i>&nbsp;		Movies = movies;</b>
+<b class="nc"><i>19</i>&nbsp;	}</b>
+<i>20</i>&nbsp;	public void displayInfo() {
+<b class="nc"><i>21</i>&nbsp;		System.out.println(Arrays.toString(Movies));</b>
+<b class="nc"><i>22</i>&nbsp;	}</b>
+<i>23</i>&nbsp;	public void printMovies() {
+<b class="fc"><i>24</i>&nbsp;		System.out.println(&quot;The movies showing at &quot; + this.Name + &quot;are:&quot;);</b>
+<b class="fc"><i>25</i>&nbsp;		for(int i=0; i&lt;Movies.length;i++) {</b>
+<b class="fc"><i>26</i>&nbsp;			System.out.println(Movies[i].getTitle() + &quot;at: &quot; + Movies[i].getTime());</b>
+<i>27</i>&nbsp;		}
+<b class="fc"><i>28</i>&nbsp;	}</b>
+<i>29</i>&nbsp;
+<i>30</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-04-13 21:44</div>
+</div>
+</body>
+</html>

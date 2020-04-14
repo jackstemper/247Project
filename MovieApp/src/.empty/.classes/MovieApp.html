@@ -1,0 +1,125 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: MovieApp</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: MovieApp (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">MovieApp</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (1/ 7)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    4%
+  </span>
+  <span class="absValue">
+    (1/ 25)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import java.util.Arrays;
+<i>2</i>&nbsp;/*
+<i>3</i>&nbsp;* MovieApp Class : Extends Shows class , holds function that views Theaters , finds the address of the theaters , 
+<i>4</i>&nbsp;* makes a new user an account, prints a users ticket
+<i>5</i>&nbsp;*/
+<b class="fc"><i>6</i>&nbsp;public class MovieApp {</b>
+<i>7</i>&nbsp;	protected Theater[] Theaters;
+<i>8</i>&nbsp;	protected Auditorium[] Auditoriums;
+<i>9</i>&nbsp;	
+<i>10</i>&nbsp;	//loading test movie and theater information
+<i>11</i>&nbsp;	public void load() {
+<b class="nc"><i>12</i>&nbsp;		Movie Frozen = new Movie(&quot;Frozen 2&quot;, 9.50, 6.50, &quot;AMC&quot;, 60, 0, &quot;Elsa&quot;);</b>
+<b class="nc"><i>13</i>&nbsp;		Movie Jungle = new Movie(&quot;The Jungle Book&quot;, 9.50, 5.0, &quot;AMC&quot;, 60, 0, &quot;Mowgli&quot;);</b>
+<b class="nc"><i>14</i>&nbsp;		Jungle.print();</b>
+<b class="nc"><i>15</i>&nbsp;		Movie[] AMCList = {Frozen, Jungle};</b>
+<b class="nc"><i>16</i>&nbsp;		Theater AMC = new Theater(&quot;AMC&quot;, &quot;6969 Test Dr.&quot;, AMCList);</b>
+<b class="nc"><i>17</i>&nbsp;		Theaters[0]=AMC;</b>
+<b class="nc"><i>18</i>&nbsp;		Movie Matrix = new Movie(&quot;The Matrix&quot;, 11.50, 8.50, &quot;Carmike&quot;, 40, 0, &quot;Neo&quot;);</b>
+<b class="nc"><i>19</i>&nbsp;		Movie Community = new Movie(&quot;Community: the Movie&quot;, 11.50, 7.0,&quot;Carmkie&quot;, 40, 0, &quot;Abhed&quot;);</b>
+<b class="nc"><i>20</i>&nbsp;		Movie[] CarmikeList = {Matrix, Community};</b>
+<b class="nc"><i>21</i>&nbsp;		Theater Carmike = new Theater(&quot;Carmike&quot;, &quot;457984 Greendale Rd.&quot;, CarmikeList);</b>
+<b class="nc"><i>22</i>&nbsp;		Theaters[1]=Carmike;</b>
+<b class="nc"><i>23</i>&nbsp;	}</b>
+<i>24</i>&nbsp;	public void viewTheaters() {
+<b class="nc"><i>25</i>&nbsp;		System.out.println(Arrays.toString(Theaters));</b>
+<b class="nc"><i>26</i>&nbsp;	}</b>
+<i>27</i>&nbsp;	public void goToTheater() {
+<b class="nc"><i>28</i>&nbsp;		Venue venue = new Venue();</b>
+<b class="nc"><i>29</i>&nbsp;		venue.getAddress();</b>
+<b class="nc"><i>30</i>&nbsp;	}</b>
+<i>31</i>&nbsp;	public void printAMovie(Movie movie) {
+<i>32</i>&nbsp;		
+<b class="nc"><i>33</i>&nbsp;	}</b>
+<i>34</i>&nbsp;	public void makeAccount() {
+<b class="nc"><i>35</i>&nbsp;		User user = new User();</b>
+<b class="nc"><i>36</i>&nbsp;		user.createAccount(user);</b>
+<b class="nc"><i>37</i>&nbsp;	}</b>
+<i>38</i>&nbsp;	public void displayTix() {
+<b class="nc"><i>39</i>&nbsp;		Ticket ticket = new Ticket();</b>
+<b class="nc"><i>40</i>&nbsp;		ticket.printTicket();</b>
+<b class="nc"><i>41</i>&nbsp;	}</b>
+<i>42</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-04-13 21:44</div>
+</div>
+</body>
+</html>

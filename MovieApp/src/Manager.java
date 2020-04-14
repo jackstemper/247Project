@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import org.junit.*;
 
 /*
 * Manager Class : extends Account, holds constructor for class, function that changes the events
@@ -18,6 +19,8 @@ public class Manager extends Account {
 		IsManager = true;
 
 	}
+
+	@Test
 	public void managerLogin(){
 		Manager manager = new Manager();
 
@@ -46,6 +49,7 @@ public class Manager extends Account {
 
 		}
 	}
+	@Test
 	public void managerMenu(){
 		System.out.println("What would you like to do today?");
 		System.out.println("1. Change Events, 2. Exit");

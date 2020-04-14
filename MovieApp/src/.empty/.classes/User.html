@@ -1,0 +1,123 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: User</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: User (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">User</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (2/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    82.4%
+  </span>
+  <span class="absValue">
+    (14/ 17)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import org.junit.Test;
+<i>2</i>&nbsp;
+<i>3</i>&nbsp;import java.util.Scanner;
+<i>4</i>&nbsp;/*
+<i>5</i>&nbsp;* User Class : Extends Account, holds tickets of the user, allows user to create account
+<i>6</i>&nbsp;*/
+<i>7</i>&nbsp;public class User extends Account {
+<i>8</i>&nbsp;	protected User user;
+<i>9</i>&nbsp;	protected String Username;
+<i>10</i>&nbsp;	protected String Password;
+<i>11</i>&nbsp;	protected Ticket[] Tickets;
+<i>12</i>&nbsp;	public Ticket[] getTickets() {
+<b class="nc"><i>13</i>&nbsp;		return Tickets;</b>
+<i>14</i>&nbsp;	}
+<i>15</i>&nbsp;	public void setTickets(Ticket[] tickets) {
+<b class="nc"><i>16</i>&nbsp;		Tickets = tickets;</b>
+<b class="nc"><i>17</i>&nbsp;	}</b>
+<b class="fc"><i>18</i>&nbsp;	Scanner keyboard = new Scanner(System.in);</b>
+<i>19</i>&nbsp;
+<b class="fc"><i>20</i>&nbsp;	public User() {</b>
+<b class="fc"><i>21</i>&nbsp;		this.Username = &quot;User&quot;;</b>
+<b class="fc"><i>22</i>&nbsp;		this.Password = &quot;Default&quot;;</b>
+<b class="fc"><i>23</i>&nbsp;	}</b>
+<i>24</i>&nbsp;	@Test
+<i>25</i>&nbsp;	public User createAccount(User user) {
+<b class="fc"><i>26</i>&nbsp;		System.out.println(&quot;Enter your desired username: &quot;);</b>
+<b class="fc"><i>27</i>&nbsp;		Username = keyboard.next();</b>
+<b class="fc"><i>28</i>&nbsp;		System.out.println(&quot;Enter a password for &quot; + Username + &quot;: &quot;);</b>
+<b class="fc"><i>29</i>&nbsp;		Password = keyboard.next();</b>
+<i>30</i>&nbsp;
+<b class="fc"><i>31</i>&nbsp;		user = new User();</b>
+<b class="fc"><i>32</i>&nbsp;		user.Username = Username;</b>
+<b class="fc"><i>33</i>&nbsp;		user.Password = Password;</b>
+<i>34</i>&nbsp;
+<b class="fc"><i>35</i>&nbsp;		System.out.println(&quot;Account created for &quot; + user.Username);</b>
+<b class="fc"><i>36</i>&nbsp;		return user;</b>
+<i>37</i>&nbsp;
+<i>38</i>&nbsp;	}
+<i>39</i>&nbsp;	
+<i>40</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-04-13 21:44</div>
+</div>
+</body>
+</html>

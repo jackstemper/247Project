@@ -1,0 +1,142 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Ticket</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Ticket (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Ticket</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    33.3%
+  </span>
+  <span class="absValue">
+    (3/ 9)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    22.2%
+  </span>
+  <span class="absValue">
+    (8/ 36)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/*
+<i>2</i>&nbsp;* Ticket Class : holds getters/seters for title , time , venue, prints ticket
+<i>3</i>&nbsp;*/
+<i>4</i>&nbsp;public class Ticket extends MovieApp {
+<i>5</i>&nbsp;	protected String Title;
+<i>6</i>&nbsp;	protected Double Time;
+<i>7</i>&nbsp;	protected String Venue;
+<b class="fc"><i>8</i>&nbsp;	private int BORDERBUFFER = 4;</b>
+<b class="fc"><i>9</i>&nbsp;	public Ticket() {</b>
+<b class="fc"><i>10</i>&nbsp;		this.Title = Title;</b>
+<b class="fc"><i>11</i>&nbsp;		this.Time = Time;</b>
+<b class="fc"><i>12</i>&nbsp;		this.Venue = Venue;</b>
+<b class="fc"><i>13</i>&nbsp;	}</b>
+<i>14</i>&nbsp;	public void setTitle(String title) {
+<b class="nc"><i>15</i>&nbsp;		this.Title = title;</b>
+<b class="nc"><i>16</i>&nbsp;	}</b>
+<i>17</i>&nbsp;	public void setTime(Double time) {
+<b class="nc"><i>18</i>&nbsp;		this.Time = time;</b>
+<b class="nc"><i>19</i>&nbsp;	}</b>
+<i>20</i>&nbsp;	public void setVenue(String venue) {
+<b class="nc"><i>21</i>&nbsp;		this.Venue = venue;</b>
+<b class="nc"><i>22</i>&nbsp;	}</b>
+<i>23</i>&nbsp;	public String getTitle() {
+<b class="nc"><i>24</i>&nbsp;		return this.Title;</b>
+<i>25</i>&nbsp;	}
+<i>26</i>&nbsp;	public Double getTime() {
+<b class="nc"><i>27</i>&nbsp;		return this.Time;</b>
+<i>28</i>&nbsp;	}
+<i>29</i>&nbsp;	public String getVenue() {
+<b class="nc"><i>30</i>&nbsp;		return this.Venue;</b>
+<i>31</i>&nbsp;	}
+<i>32</i>&nbsp;	public void printTicket() {
+<b class="fc"><i>33</i>&nbsp;		this.ticketBorderMaker();</b>
+<b class="nc"><i>34</i>&nbsp;		System.out.println(&quot;* &quot; + this.getTitle() + &quot; *&quot;);</b>
+<b class="nc"><i>35</i>&nbsp;		System.out.println(&quot;* &quot; + this.getTime() + &quot; *&quot;);</b>
+<b class="nc"><i>36</i>&nbsp;		System.out.println(&quot;* &quot; + this.getVenue() + &quot; *&quot;);</b>
+<b class="nc"><i>37</i>&nbsp;		this.ticketBorderMaker();</b>
+<b class="nc"><i>38</i>&nbsp;	}</b>
+<i>39</i>&nbsp;	private void ticketBorderMaker() {
+<b class="fc"><i>40</i>&nbsp;		int titleLength = this.Title.length();</b>
+<b class="nc"><i>41</i>&nbsp;		int venueLength = this.Venue.length();</b>
+<b class="nc"><i>42</i>&nbsp;		if (titleLength &gt;= venueLength) {</b>
+<b class="nc"><i>43</i>&nbsp;			int starTotal = titleLength + BORDERBUFFER;</b>
+<b class="nc"><i>44</i>&nbsp;			System.out.println();</b>
+<b class="nc"><i>45</i>&nbsp;			while(starTotal &gt; 0) {</b>
+<b class="nc"><i>46</i>&nbsp;				System.out.print(&quot;*&quot;);</b>
+<b class="nc"><i>47</i>&nbsp;				starTotal-=1;</b>
+<i>48</i>&nbsp;			}
+<i>49</i>&nbsp;			
+<b class="nc"><i>50</i>&nbsp;		} else {</b>
+<b class="nc"><i>51</i>&nbsp;			int starTotal = venueLength + BORDERBUFFER;</b>
+<b class="nc"><i>52</i>&nbsp;			System.out.println();</b>
+<b class="nc"><i>53</i>&nbsp;			while(starTotal &gt; 0) {</b>
+<b class="nc"><i>54</i>&nbsp;				System.out.print(&quot;*&quot;);</b>
+<b class="nc"><i>55</i>&nbsp;				starTotal-=1;</b>
+<i>56</i>&nbsp;			}
+<i>57</i>&nbsp;		}
+<b class="nc"><i>58</i>&nbsp;	}</b>
+<i>59</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2020-04-13 21:44</div>
+</div>
+</body>
+</html>

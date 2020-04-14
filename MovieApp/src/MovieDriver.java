@@ -1,3 +1,5 @@
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -43,12 +45,13 @@ public class MovieDriver {
 		Accounts[1] = Manager;
 		//Account[] Accounts = {Guest, Existing, Employee};
 	}
+	@Test
 	public void viewTheaters() {
 		for(int i =0; i<Theaters.length;i++) {
 			System.out.println(Theaters[i].getName() + " which is at " + Theaters[i].getAddress());
 		}
 	}
-	
+	@Test
 	public void goToTheater(Theater theater) {
 		while(true) {
 			System.out.println("Welcome to " + theater.getName());
@@ -65,11 +68,12 @@ public class MovieDriver {
 		}
 		
 	}
+	@Test
 	public void managerLogin(){
 		Manager manager = new Manager();
 		manager.managerLogin();
 	}
-
+	@Test
 	public void makeAccount() {
 		User user = new User();
 		user.createAccount(user);
@@ -78,11 +82,12 @@ public class MovieDriver {
 		Ticket ticket = new Ticket();
 		ticket.printTicket();
 	}
+	@Test
 	public void run() {
 		System.out.println("Loading the App");
 		load();
 		System.out.println("Welcome to our Columbia Movie Theater App");
-		//managerLogin();
+		managerLogin();
 		while(true) {
 			displayHome();
 			int userCommand = getAction(HomeOptions.length);

@@ -1,7 +1,10 @@
 import org.junit.Test;
+import org.junit.Assert;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
+import static org.junit.Assert.assertEquals;
 
 /*
 * MovieDriver class : Holds an array of Home and Venue Options that give the basic functions of the app, runs the 
@@ -69,15 +72,18 @@ public class MovieDriver {
 		
 	}
 	@Test
-	public void managerLogin(){
+	public void login(){
 		Manager manager = new Manager();
 		manager.managerLogin();
 	}
 	@Test
 	public void makeAccount() {
 		User user = new User();
-		user.createAccount(user);
+		user.testUser(user);
+		System.out.println(user.Username +" " + user.Password);
+
 	}
+
 	public void displayTix() {
 		Ticket ticket = new Ticket();
 		ticket.printTicket();
@@ -87,7 +93,10 @@ public class MovieDriver {
 		System.out.println("Loading the App");
 		load();
 		System.out.println("Welcome to our Columbia Movie Theater App");
-		managerLogin();
+		login();
+
+
+
 		while(true) {
 			displayHome();
 			int userCommand = getAction(HomeOptions.length);
@@ -111,11 +120,15 @@ public class MovieDriver {
 					makeAccount();
 					break;
 				case(3):
-					displayTix();
+					System.out.println("Under Construction");
+					//displayTix();
 					break;
 			}
 		}
 	}
+
+
+
 	private void displayHome() {
 		System.out.println("--------- Home Page ---------");
 		for(int i =0; i< HomeOptions.length; i++) {

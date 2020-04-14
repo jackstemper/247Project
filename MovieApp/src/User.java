@@ -36,5 +36,10 @@ public class User extends Account {
 		return user;
 
 	}
-	
+	@Test
+	public User testUser(User user){
+		user.Username = "Joe";
+		user.Password = "Exotic";
+		return user;
+	}
 }

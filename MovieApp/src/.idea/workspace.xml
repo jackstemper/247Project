@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75ada901-141e-4724-b401-6d92e5d090f3" name="Default Changelist" comment="" />
+    <list default="true" id="75ada901-141e-4724-b401-6d92e5d090f3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/MovieDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/User.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="174" />
+    <option name="myElementSize" value="171" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OUTPUT_DIRECTORY" value="C:\Users\Owner\Documents\GitHub\247Project\MovieApp\src" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -83,30 +95,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="358" y="79" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586828676059" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586828819554">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1586871153260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586828819554" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586828819554">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1586871153260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586828819554" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586828819554">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1586871153260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586828819554" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586828819554">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1586871153260">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586828819554" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586871153260" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1586827639891">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1586827639891" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586827511024">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1586866806944">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586827511024" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586866806944" />
     <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586827932682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -121,6 +133,6 @@
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1586827573823" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/src$MovieDriver.ic" NAME="MovieDriver Coverage Results" MODIFIED="1586828525004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/src$MovieDriver.ic" NAME="MovieDriver Coverage Results" MODIFIED="1586871153229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
